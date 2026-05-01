@@ -78,7 +78,7 @@ A autenticação é realizada via JWT (JSON Web Token) stateless. O cliente real
 
 ### 3.1 Diagrama de Relacionamentos
 
-![Diagrama de entidades](diagrama.png)
+![Diagrama de entidades](diagrama-entidades.png)
 
 ### 3.2 Descrição dos Relacionamentos
 
@@ -435,7 +435,7 @@ Resultado esperado — todas as operações registradas com o username responsá
 | `pom.xml` | Dependências do projeto (inclui jjwt 0.12.3) |
 | `src/main/resources/application.properties` | Configuração das duas datasources e JWT |
 | `locacao-veiculos3.postman_collection.json` | Collection para teste dos endpoints |
-| `diagrama-entidades.svg` | Diagrama de entidades e relacionamentos |
+| `diagrama-entidades.png` | Diagrama de entidades e relacionamentos |
 | `README.md` | Este documento |
 
 ---
