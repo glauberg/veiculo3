@@ -78,7 +78,7 @@ A autenticação é realizada via JWT (JSON Web Token) stateless. O cliente real
 
 ### 3.1 Diagrama de Relacionamentos
 
-![Diagrama de entidades](diagrama-entidades.svg)
+![Diagrama de entidades](diagrama.png)
 
 ### 3.2 Descrição dos Relacionamentos
 
