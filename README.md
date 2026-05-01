@@ -418,7 +418,7 @@ Resultado esperado — todas as operações registradas com o username responsá
 | `pom.xml` | Dependências do projeto (inclui jjwt 0.12.3) |
 | `src/main/resources/application.properties` | Configuração das duas datasources e JWT |
 | `locacao-veiculos3.postman_collection.json` | Collection para teste dos endpoints |
-| `diagrama-entidades.svg` | Diagrama de entidades e relacionamentos |
+| `diagrama.png` | Diagrama de entidades e relacionamentos |
 | `README.md` | Este documento |
 
 ---
