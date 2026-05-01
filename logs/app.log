@@ -1,0 +1,1051 @@
+nohup: ignorando entrada
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.locacao:veiculos3 >------------------------
+[INFO] Building  0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.14:run (default-cli) > test-compile @ veiculos3 >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ veiculos3 ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ veiculos3 ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ veiculos3 ---
+[INFO] skip non existing resourceDirectory /home/glauber/Projetos/others/veiculos3/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ veiculos3 ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.5.14:run (default-cli) < test-compile @ veiculos3 <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.5.14:run (default-cli) @ veiculos3 ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.14)
+
+2026-05-01T14:34:26.515-03:00  INFO 239111 --- [veiculos3] [  restartedMain] c.l.veiculos3.Veiculos3Application       : Starting Veiculos3Application using Java 17.0.18 with PID 239111 (/home/glauber/Projetos/others/veiculos3/target/classes started by glauber in /home/glauber/Projetos/others/veiculos3)
+2026-05-01T14:34:26.517-03:00  INFO 239111 --- [veiculos3] [  restartedMain] c.l.veiculos3.Veiculos3Application       : No active profile set, falling back to 1 default profile: "default"
+2026-05-01T14:34:26.549-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-01T14:34:26.549-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-01T14:34:26.930-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-01T14:34:26.966-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2026-05-01T14:34:26.967-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-01T14:34:26.979-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 5 JPA repository interfaces.
+2026-05-01T14:34:27.677-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-05-01T14:34:27.687-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-01T14:34:27.687-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-05-01T14:34:27.710-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-01T14:34:27.710-03:00  INFO 239111 --- [veiculos3] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1160 ms
+2026-05-01T14:34:28.037-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: audit]
+2026-05-01T14:34:28.072-03:00  INFO 239111 --- [veiculos3] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-01T14:34:28.097-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-01T14:34:28.289-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-01T14:34:28.312-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-01T14:34:28.455-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:baseB user=SA
+2026-05-01T14:34:28.457-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-01T14:34:28.475-03:00  WARN 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-01T14:34:28.494-03:00  INFO 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-01T14:34:29.067-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    create table log_auditoria (
+        id bigint generated by default as identity,
+        data_hora timestamp(6) not null,
+        entidade varchar(255) not null,
+        entidade_id bigint not null,
+        operacao varchar(255) not null,
+        usuario_responsavel varchar(255) not null,
+        primary key (id)
+    )
+2026-05-01T14:34:29.120-03:00  INFO 239111 --- [veiculos3] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'audit'
+2026-05-01T14:34:29.131-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: primary]
+2026-05-01T14:34:29.134-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-01T14:34:29.142-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-01T14:34:29.143-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-05-01T14:34:29.146-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:baseA user=SA
+2026-05-01T14:34:29.146-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-05-01T14:34:29.146-03:00  WARN 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-01T14:34:29.147-03:00  INFO 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-01T14:34:29.341-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    create table acessorios (
+        id bigint generated by default as identity,
+        descricao varchar(255) not null,
+        nome varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table clientes (
+        id bigint generated by default as identity,
+        cpf varchar(255) not null,
+        email varchar(255) not null,
+        nome varchar(255) not null,
+        telefone varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table locacoes (
+        id bigint generated by default as identity,
+        data_fim date not null,
+        data_inicio date not null,
+        valor_total float(53) not null,
+        cliente_id bigint not null,
+        veiculo_id bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table usuarios (
+        id bigint generated by default as identity,
+        password varchar(255) not null,
+        role enum ('ROLE_AUDITOR','ROLE_CONTRIBUTOR','ROLE_MASTER') not null,
+        username varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table veiculo_acessorio (
+        veiculo_id bigint not null,
+        acessorio_id bigint not null,
+        primary key (veiculo_id, acessorio_id)
+    )
+Hibernate: 
+    create table veiculos (
+        id bigint generated by default as identity,
+        categoria enum ('ECONOMICO','PREMIUM','SUV') not null,
+        disponivel boolean not null,
+        marca varchar(255) not null,
+        modelo varchar(255) not null,
+        placa varchar(255) not null,
+        valor_diaria float(53) not null,
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists clientes 
+       drop constraint if exists UK7wflw78ibh162cmq12ii6ffly
+Hibernate: 
+    alter table if exists clientes 
+       add constraint UK7wflw78ibh162cmq12ii6ffly unique (cpf)
+Hibernate: 
+    alter table if exists clientes 
+       drop constraint if exists UK1c96wv36rk2hwui7qhjks3mvg
+Hibernate: 
+    alter table if exists clientes 
+       add constraint UK1c96wv36rk2hwui7qhjks3mvg unique (email)
+Hibernate: 
+    alter table if exists usuarios 
+       drop constraint if exists UKm2dvbwfge291euvmk6vkkocao
+Hibernate: 
+    alter table if exists usuarios 
+       add constraint UKm2dvbwfge291euvmk6vkkocao unique (username)
+Hibernate: 
+    alter table if exists veiculos 
+       drop constraint if exists UKti2seg7u1j0clbvwol5x11jmv
+Hibernate: 
+    alter table if exists veiculos 
+       add constraint UKti2seg7u1j0clbvwol5x11jmv unique (placa)
+Hibernate: 
+    alter table if exists locacoes 
+       add constraint FKjfr5l78v026u9maxe1wgx88kr 
+       foreign key (cliente_id) 
+       references clientes
+Hibernate: 
+    alter table if exists locacoes 
+       add constraint FKry9641vt3k0xheml4fgrl1om9 
+       foreign key (veiculo_id) 
+       references veiculos
+Hibernate: 
+    alter table if exists veiculo_acessorio 
+       add constraint FKbplqom9rli7tkvactky6n6bwv 
+       foreign key (acessorio_id) 
+       references acessorios
+Hibernate: 
+    alter table if exists veiculo_acessorio 
+       add constraint FK3nng6u140a2f384wl5a3jvas2 
+       foreign key (veiculo_id) 
+       references veiculos
+2026-05-01T14:34:29.362-03:00  INFO 239111 --- [veiculos3] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'primary'
+2026-05-01T14:34:29.620-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-01T14:34:30.075-03:00  INFO 239111 --- [veiculos3] [  restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-05-01T14:34:30.076-03:00  WARN 239111 --- [veiculos3] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-05-01T14:34:30.286-03:00  WARN 239111 --- [veiculos3] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-01T14:34:30.685-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Databases available at 'jdbc:h2:mem:baseB', 'jdbc:h2:mem:baseA'
+2026-05-01T14:34:30.741-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-01T14:34:30.774-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-05-01T14:34:30.782-03:00  INFO 239111 --- [veiculos3] [  restartedMain] c.l.veiculos3.Veiculos3Application       : Started Veiculos3Application in 4.609 seconds (process running for 4.903)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    insert 
+    into
+        usuarios
+        (password, role, username, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    insert 
+    into
+        usuarios
+        (password, role, username, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    insert 
+    into
+        usuarios
+        (password, role, username, id) 
+    values
+        (?, ?, ?, default)
+==============================================
+  USUÁRIOS INICIALIZADOS COM SUCESSO
+==============================================
+  MASTER      → usuario: master      | senha: master123
+  CONTRIBUTOR → usuario: contributor | senha: contributor123
+  AUDITOR     → usuario: auditor     | senha: auditor123
+==============================================
+2026-05-01T14:34:46.649-03:00  INFO 239111 --- [veiculos3] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-01T14:34:46.650-03:00  INFO 239111 --- [veiculos3] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-01T14:34:46.651-03:00  INFO 239111 --- [veiculos3] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.descricao,
+        a1_0.nome 
+    from
+        acessorios a1_0
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    insert 
+    into
+        usuarios
+        (password, role, username, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        acessorios
+        (descricao, nome, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    insert 
+    into
+        log_auditoria
+        (data_hora, entidade, entidade_id, operacao, usuario_responsavel, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+2026-05-01T14:52:36.493-03:00  WARN 239111 --- [veiculos3] [nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.descricao,
+        a1_0.nome 
+    from
+        acessorios a1_0
+2026-05-01T14:59:27.851-03:00  INFO 239111 --- [veiculos3] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-05-01T14:59:27.859-03:00  INFO 239111 --- [veiculos3] [       Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-01T14:59:27.868-03:00  INFO 239111 --- [veiculos3] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-05-01T14:59:27.880-03:00  INFO 239111 --- [veiculos3] [       Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'primary'
+2026-05-01T14:59:27.884-03:00  INFO 239111 --- [veiculos3] [       Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'audit'
+2026-05-01T14:59:27.885-03:00  INFO 239111 --- [veiculos3] [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-01T14:59:27.887-03:00  INFO 239111 --- [veiculos3] [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-01T14:59:27.888-03:00  INFO 239111 --- [veiculos3] [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-05-01T14:59:27.889-03:00  INFO 239111 --- [veiculos3] [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.14)
+
+2026-05-01T14:59:27.955-03:00  INFO 239111 --- [veiculos3] [  restartedMain] c.l.veiculos3.Veiculos3Application       : Starting Veiculos3Application using Java 17.0.18 with PID 239111 (/home/glauber/Projetos/others/veiculos3/target/classes started by glauber in /home/glauber/Projetos/others/veiculos3)
+2026-05-01T14:59:27.955-03:00  INFO 239111 --- [veiculos3] [  restartedMain] c.l.veiculos3.Veiculos3Application       : No active profile set, falling back to 1 default profile: "default"
+2026-05-01T14:59:28.048-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-01T14:59:28.051-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2026-05-01T14:59:28.051-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-01T14:59:28.058-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 5 JPA repository interfaces.
+2026-05-01T14:59:28.204-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-05-01T14:59:28.205-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-01T14:59:28.205-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-05-01T14:59:28.211-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-01T14:59:28.211-03:00  INFO 239111 --- [veiculos3] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 255 ms
+2026-05-01T14:59:28.270-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: audit]
+2026-05-01T14:59:28.272-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-01T14:59:28.276-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-01T14:59:28.277-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-05-01T14:59:28.278-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn27: url=jdbc:h2:mem:baseB user=SA
+2026-05-01T14:59:28.278-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-05-01T14:59:28.279-03:00  WARN 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-01T14:59:28.279-03:00  INFO 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-01T14:59:28.307-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-01T14:59:28.309-03:00  INFO 239111 --- [veiculos3] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'audit'
+2026-05-01T14:59:28.317-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: primary]
+2026-05-01T14:59:28.318-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-01T14:59:28.322-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-01T14:59:28.323-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-05-01T14:59:28.324-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn28: url=jdbc:h2:mem:baseA user=SA
+2026-05-01T14:59:28.324-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-05-01T14:59:28.324-03:00  WARN 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-01T14:59:28.324-03:00  INFO 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-01T14:59:28.391-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-01T14:59:28.399-03:00  INFO 239111 --- [veiculos3] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'primary'
+2026-05-01T14:59:28.521-03:00  INFO 239111 --- [veiculos3] [  restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-05-01T14:59:28.521-03:00  WARN 239111 --- [veiculos3] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-05-01T14:59:28.606-03:00  WARN 239111 --- [veiculos3] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-01T14:59:28.799-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Databases available at 'jdbc:h2:mem:baseB', 'jdbc:h2:mem:baseA'
+2026-05-01T14:59:28.823-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-01T14:59:28.832-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-05-01T14:59:28.835-03:00  INFO 239111 --- [veiculos3] [  restartedMain] c.l.veiculos3.Veiculos3Application       : Started Veiculos3Application in 0.896 seconds (process running for 1502.956)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+==============================================
+  USUÁRIOS INICIALIZADOS COM SUCESSO
+==============================================
+  MASTER      → usuario: master      | senha: master123
+  CONTRIBUTOR → usuario: contributor | senha: contributor123
+  AUDITOR     → usuario: auditor     | senha: auditor123
+==============================================
+2026-05-01T14:59:28.863-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-01T14:59:32.229-03:00  INFO 239111 --- [veiculos3] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-05-01T14:59:32.231-03:00  INFO 239111 --- [veiculos3] [       Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-01T14:59:32.232-03:00  INFO 239111 --- [veiculos3] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-05-01T14:59:32.234-03:00  INFO 239111 --- [veiculos3] [       Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'primary'
+2026-05-01T14:59:32.234-03:00  INFO 239111 --- [veiculos3] [       Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'audit'
+2026-05-01T14:59:32.234-03:00  INFO 239111 --- [veiculos3] [       Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-05-01T14:59:32.235-03:00  INFO 239111 --- [veiculos3] [       Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-05-01T14:59:32.235-03:00  INFO 239111 --- [veiculos3] [       Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-05-01T14:59:32.235-03:00  INFO 239111 --- [veiculos3] [       Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.14)
+
+2026-05-01T14:59:32.309-03:00  INFO 239111 --- [veiculos3] [  restartedMain] c.l.veiculos3.Veiculos3Application       : Starting Veiculos3Application using Java 17.0.18 with PID 239111 (/home/glauber/Projetos/others/veiculos3/target/classes started by glauber in /home/glauber/Projetos/others/veiculos3)
+2026-05-01T14:59:32.310-03:00  INFO 239111 --- [veiculos3] [  restartedMain] c.l.veiculos3.Veiculos3Application       : No active profile set, falling back to 1 default profile: "default"
+2026-05-01T14:59:32.403-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-01T14:59:32.406-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 1 JPA repository interface.
+2026-05-01T14:59:32.406-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-01T14:59:32.416-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 5 JPA repository interfaces.
+2026-05-01T14:59:32.545-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-05-01T14:59:32.546-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-01T14:59:32.546-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-05-01T14:59:32.551-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-01T14:59:32.551-03:00  INFO 239111 --- [veiculos3] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 240 ms
+2026-05-01T14:59:32.605-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: audit]
+2026-05-01T14:59:32.606-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-01T14:59:32.614-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-01T14:59:32.614-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-05-01T14:59:32.615-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn47: url=jdbc:h2:mem:baseB user=SA
+2026-05-01T14:59:32.615-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-05-01T14:59:32.615-03:00  WARN 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-01T14:59:32.616-03:00  INFO 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-01T14:59:32.636-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-01T14:59:32.636-03:00  INFO 239111 --- [veiculos3] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'audit'
+2026-05-01T14:59:32.644-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: primary]
+2026-05-01T14:59:32.645-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-01T14:59:32.648-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-01T14:59:32.649-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2026-05-01T14:59:32.650-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn48: url=jdbc:h2:mem:baseA user=SA
+2026-05-01T14:59:32.650-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2026-05-01T14:59:32.650-03:00  WARN 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-01T14:59:32.650-03:00  INFO 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-01T14:59:32.709-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-01T14:59:32.713-03:00  INFO 239111 --- [veiculos3] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'primary'
+2026-05-01T14:59:32.832-03:00  INFO 239111 --- [veiculos3] [  restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-05-01T14:59:32.832-03:00  WARN 239111 --- [veiculos3] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-05-01T14:59:32.933-03:00  WARN 239111 --- [veiculos3] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-01T14:59:33.098-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Databases available at 'jdbc:h2:mem:baseB', 'jdbc:h2:mem:baseA'
+2026-05-01T14:59:33.121-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-01T14:59:33.130-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-05-01T14:59:33.134-03:00  INFO 239111 --- [veiculos3] [  restartedMain] c.l.veiculos3.Veiculos3Application       : Started Veiculos3Application in 0.844 seconds (process running for 1507.254)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+==============================================
+  USUÁRIOS INICIALIZADOS COM SUCESSO
+==============================================
+  MASTER      → usuario: master      | senha: master123
+  CONTRIBUTOR → usuario: contributor | senha: contributor123
+  AUDITOR     → usuario: auditor     | senha: auditor123
+==============================================
+2026-05-01T14:59:33.160-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-01T14:59:39.530-03:00  INFO 239111 --- [veiculos3] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-05-01T14:59:39.531-03:00  INFO 239111 --- [veiculos3] [      Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-01T14:59:39.531-03:00  INFO 239111 --- [veiculos3] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-05-01T14:59:39.533-03:00  INFO 239111 --- [veiculos3] [      Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'primary'
+2026-05-01T14:59:39.533-03:00  INFO 239111 --- [veiculos3] [      Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'audit'
+2026-05-01T14:59:39.533-03:00  INFO 239111 --- [veiculos3] [      Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-05-01T14:59:39.533-03:00  INFO 239111 --- [veiculos3] [      Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2026-05-01T14:59:39.534-03:00  INFO 239111 --- [veiculos3] [      Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2026-05-01T14:59:39.534-03:00  INFO 239111 --- [veiculos3] [      Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.14)
+
+2026-05-01T14:59:39.579-03:00  INFO 239111 --- [veiculos3] [  restartedMain] c.l.veiculos3.Veiculos3Application       : Starting Veiculos3Application using Java 17.0.18 with PID 239111 (/home/glauber/Projetos/others/veiculos3/target/classes started by glauber in /home/glauber/Projetos/others/veiculos3)
+2026-05-01T14:59:39.579-03:00  INFO 239111 --- [veiculos3] [  restartedMain] c.l.veiculos3.Veiculos3Application       : No active profile set, falling back to 1 default profile: "default"
+2026-05-01T14:59:39.651-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-01T14:59:39.653-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 1 JPA repository interface.
+2026-05-01T14:59:39.653-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-01T14:59:39.658-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 5 JPA repository interfaces.
+2026-05-01T14:59:39.757-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-05-01T14:59:39.758-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-01T14:59:39.758-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-05-01T14:59:39.764-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-01T14:59:39.765-03:00  INFO 239111 --- [veiculos3] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 185 ms
+2026-05-01T14:59:39.827-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: audit]
+2026-05-01T14:59:39.828-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-01T14:59:39.835-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-01T14:59:39.836-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2026-05-01T14:59:39.836-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection conn67: url=jdbc:h2:mem:baseB user=SA
+2026-05-01T14:59:39.837-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2026-05-01T14:59:39.837-03:00  WARN 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-01T14:59:39.837-03:00  INFO 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-01T14:59:39.858-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-01T14:59:39.860-03:00  INFO 239111 --- [veiculos3] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'audit'
+2026-05-01T14:59:39.868-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: primary]
+2026-05-01T14:59:39.870-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-01T14:59:39.873-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-01T14:59:39.874-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2026-05-01T14:59:39.874-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection conn68: url=jdbc:h2:mem:baseA user=SA
+2026-05-01T14:59:39.875-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2026-05-01T14:59:39.875-03:00  WARN 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-01T14:59:39.875-03:00  INFO 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-01T14:59:39.937-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-01T14:59:39.939-03:00  INFO 239111 --- [veiculos3] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'primary'
+2026-05-01T14:59:40.058-03:00  INFO 239111 --- [veiculos3] [  restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-05-01T14:59:40.059-03:00  WARN 239111 --- [veiculos3] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-05-01T14:59:40.156-03:00  WARN 239111 --- [veiculos3] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-01T14:59:40.316-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Databases available at 'jdbc:h2:mem:baseB', 'jdbc:h2:mem:baseA'
+2026-05-01T14:59:40.336-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-01T14:59:40.344-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-05-01T14:59:40.349-03:00  INFO 239111 --- [veiculos3] [  restartedMain] c.l.veiculos3.Veiculos3Application       : Started Veiculos3Application in 0.782 seconds (process running for 1514.469)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+==============================================
+  USUÁRIOS INICIALIZADOS COM SUCESSO
+==============================================
+  MASTER      → usuario: master      | senha: master123
+  CONTRIBUTOR → usuario: contributor | senha: contributor123
+  AUDITOR     → usuario: auditor     | senha: auditor123
+==============================================
+2026-05-01T14:59:40.371-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-01T15:00:04.778-03:00  INFO 239111 --- [veiculos3] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-05-01T15:00:04.780-03:00  INFO 239111 --- [veiculos3] [      Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-01T15:00:04.781-03:00  INFO 239111 --- [veiculos3] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-05-01T15:00:04.783-03:00  INFO 239111 --- [veiculos3] [      Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'primary'
+2026-05-01T15:00:04.783-03:00  INFO 239111 --- [veiculos3] [      Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'audit'
+2026-05-01T15:00:04.783-03:00  INFO 239111 --- [veiculos3] [      Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2026-05-01T15:00:04.783-03:00  INFO 239111 --- [veiculos3] [      Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2026-05-01T15:00:04.784-03:00  INFO 239111 --- [veiculos3] [      Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2026-05-01T15:00:04.784-03:00  INFO 239111 --- [veiculos3] [      Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.14)
+
+2026-05-01T15:00:04.849-03:00  INFO 239111 --- [veiculos3] [  restartedMain] c.l.veiculos3.Veiculos3Application       : Starting Veiculos3Application using Java 17.0.18 with PID 239111 (/home/glauber/Projetos/others/veiculos3/target/classes started by glauber in /home/glauber/Projetos/others/veiculos3)
+2026-05-01T15:00:04.849-03:00  INFO 239111 --- [veiculos3] [  restartedMain] c.l.veiculos3.Veiculos3Application       : No active profile set, falling back to 1 default profile: "default"
+2026-05-01T15:00:04.931-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-01T15:00:04.933-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 1 JPA repository interface.
+2026-05-01T15:00:04.934-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-01T15:00:04.939-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 5 JPA repository interfaces.
+2026-05-01T15:00:05.043-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-05-01T15:00:05.044-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-01T15:00:05.044-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-05-01T15:00:05.048-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-01T15:00:05.049-03:00  INFO 239111 --- [veiculos3] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 199 ms
+2026-05-01T15:00:05.101-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: audit]
+2026-05-01T15:00:05.102-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-01T15:00:05.107-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-01T15:00:05.108-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2026-05-01T15:00:05.108-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection conn87: url=jdbc:h2:mem:baseB user=SA
+2026-05-01T15:00:05.108-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2026-05-01T15:00:05.109-03:00  WARN 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-01T15:00:05.109-03:00  INFO 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-9)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-01T15:00:05.129-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-01T15:00:05.130-03:00  INFO 239111 --- [veiculos3] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'audit'
+2026-05-01T15:00:05.138-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: primary]
+2026-05-01T15:00:05.139-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-01T15:00:05.143-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-01T15:00:05.144-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2026-05-01T15:00:05.145-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection conn88: url=jdbc:h2:mem:baseA user=SA
+2026-05-01T15:00:05.145-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2026-05-01T15:00:05.145-03:00  WARN 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-01T15:00:05.146-03:00  INFO 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-10)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-01T15:00:05.193-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-01T15:00:05.195-03:00  INFO 239111 --- [veiculos3] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'primary'
+2026-05-01T15:00:05.297-03:00  INFO 239111 --- [veiculos3] [  restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-05-01T15:00:05.297-03:00  WARN 239111 --- [veiculos3] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-05-01T15:00:05.388-03:00  WARN 239111 --- [veiculos3] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-01T15:00:05.585-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Databases available at 'jdbc:h2:mem:baseB', 'jdbc:h2:mem:baseA'
+2026-05-01T15:00:05.604-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-01T15:00:05.611-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-05-01T15:00:05.614-03:00  INFO 239111 --- [veiculos3] [  restartedMain] c.l.veiculos3.Veiculos3Application       : Started Veiculos3Application in 0.782 seconds (process running for 1539.735)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+==============================================
+  USUÁRIOS INICIALIZADOS COM SUCESSO
+==============================================
+  MASTER      → usuario: master      | senha: master123
+  CONTRIBUTOR → usuario: contributor | senha: contributor123
+  AUDITOR     → usuario: auditor     | senha: auditor123
+==============================================
+2026-05-01T15:00:05.636-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-01T15:00:10.009-03:00  INFO 239111 --- [veiculos3] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-05-01T15:00:10.010-03:00  INFO 239111 --- [veiculos3] [      Thread-19] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-01T15:00:10.011-03:00  INFO 239111 --- [veiculos3] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-05-01T15:00:10.013-03:00  INFO 239111 --- [veiculos3] [      Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'primary'
+2026-05-01T15:00:10.014-03:00  INFO 239111 --- [veiculos3] [      Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'audit'
+2026-05-01T15:00:10.014-03:00  INFO 239111 --- [veiculos3] [      Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2026-05-01T15:00:10.014-03:00  INFO 239111 --- [veiculos3] [      Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2026-05-01T15:00:10.014-03:00  INFO 239111 --- [veiculos3] [      Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2026-05-01T15:00:10.015-03:00  INFO 239111 --- [veiculos3] [      Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.14)
+
+2026-05-01T15:00:10.078-03:00  INFO 239111 --- [veiculos3] [  restartedMain] c.l.veiculos3.Veiculos3Application       : Starting Veiculos3Application using Java 17.0.18 with PID 239111 (/home/glauber/Projetos/others/veiculos3/target/classes started by glauber in /home/glauber/Projetos/others/veiculos3)
+2026-05-01T15:00:10.079-03:00  INFO 239111 --- [veiculos3] [  restartedMain] c.l.veiculos3.Veiculos3Application       : No active profile set, falling back to 1 default profile: "default"
+2026-05-01T15:00:10.167-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-01T15:00:10.170-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2026-05-01T15:00:10.170-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-01T15:00:10.176-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 5 JPA repository interfaces.
+2026-05-01T15:00:10.303-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-05-01T15:00:10.304-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-01T15:00:10.304-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-05-01T15:00:10.309-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-01T15:00:10.309-03:00  INFO 239111 --- [veiculos3] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 228 ms
+2026-05-01T15:00:10.371-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: audit]
+2026-05-01T15:00:10.373-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-01T15:00:10.377-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-01T15:00:10.378-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2026-05-01T15:00:10.380-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection conn107: url=jdbc:h2:mem:baseB user=SA
+2026-05-01T15:00:10.380-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2026-05-01T15:00:10.381-03:00  WARN 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-01T15:00:10.382-03:00  INFO 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-11)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-01T15:00:10.405-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-01T15:00:10.407-03:00  INFO 239111 --- [veiculos3] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'audit'
+2026-05-01T15:00:10.416-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: primary]
+2026-05-01T15:00:10.417-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-01T15:00:10.420-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-01T15:00:10.421-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2026-05-01T15:00:10.421-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection conn108: url=jdbc:h2:mem:baseA user=SA
+2026-05-01T15:00:10.421-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2026-05-01T15:00:10.422-03:00  WARN 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-01T15:00:10.422-03:00  INFO 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-12)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-01T15:00:10.497-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-01T15:00:10.500-03:00  INFO 239111 --- [veiculos3] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'primary'
+2026-05-01T15:00:10.624-03:00  INFO 239111 --- [veiculos3] [  restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-05-01T15:00:10.624-03:00  WARN 239111 --- [veiculos3] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-05-01T15:00:10.714-03:00  WARN 239111 --- [veiculos3] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-01T15:00:10.882-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Databases available at 'jdbc:h2:mem:baseB', 'jdbc:h2:mem:baseA'
+2026-05-01T15:00:10.903-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-01T15:00:10.912-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-05-01T15:00:10.916-03:00  INFO 239111 --- [veiculos3] [  restartedMain] c.l.veiculos3.Veiculos3Application       : Started Veiculos3Application in 0.855 seconds (process running for 1545.036)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+==============================================
+  USUÁRIOS INICIALIZADOS COM SUCESSO
+==============================================
+  MASTER      → usuario: master      | senha: master123
+  CONTRIBUTOR → usuario: contributor | senha: contributor123
+  AUDITOR     → usuario: auditor     | senha: auditor123
+==============================================
+2026-05-01T15:00:10.938-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-01T15:00:26.337-03:00  INFO 239111 --- [veiculos3] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-05-01T15:00:26.338-03:00  INFO 239111 --- [veiculos3] [      Thread-23] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-01T15:00:26.338-03:00  INFO 239111 --- [veiculos3] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-05-01T15:00:26.340-03:00  INFO 239111 --- [veiculos3] [      Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'primary'
+2026-05-01T15:00:26.340-03:00  INFO 239111 --- [veiculos3] [      Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'audit'
+2026-05-01T15:00:26.340-03:00  INFO 239111 --- [veiculos3] [      Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2026-05-01T15:00:26.340-03:00  INFO 239111 --- [veiculos3] [      Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2026-05-01T15:00:26.340-03:00  INFO 239111 --- [veiculos3] [      Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2026-05-01T15:00:26.341-03:00  INFO 239111 --- [veiculos3] [      Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.14)
+
+2026-05-01T15:00:26.392-03:00  INFO 239111 --- [veiculos3] [  restartedMain] c.l.veiculos3.Veiculos3Application       : Starting Veiculos3Application using Java 17.0.18 with PID 239111 (/home/glauber/Projetos/others/veiculos3/target/classes started by glauber in /home/glauber/Projetos/others/veiculos3)
+2026-05-01T15:00:26.392-03:00  INFO 239111 --- [veiculos3] [  restartedMain] c.l.veiculos3.Veiculos3Application       : No active profile set, falling back to 1 default profile: "default"
+2026-05-01T15:00:26.463-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-01T15:00:26.466-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 1 JPA repository interface.
+2026-05-01T15:00:26.466-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-01T15:00:26.470-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 5 JPA repository interfaces.
+2026-05-01T15:00:26.568-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-05-01T15:00:26.569-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-01T15:00:26.569-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-05-01T15:00:26.573-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-01T15:00:26.573-03:00  INFO 239111 --- [veiculos3] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 179 ms
+2026-05-01T15:00:26.638-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: audit]
+2026-05-01T15:00:26.640-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-01T15:00:26.643-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-01T15:00:26.644-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2026-05-01T15:00:26.644-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection conn127: url=jdbc:h2:mem:baseB user=SA
+2026-05-01T15:00:26.644-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2026-05-01T15:00:26.644-03:00  WARN 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-01T15:00:26.645-03:00  INFO 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-13)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-01T15:00:26.667-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-01T15:00:26.668-03:00  INFO 239111 --- [veiculos3] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'audit'
+2026-05-01T15:00:26.675-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: primary]
+2026-05-01T15:00:26.676-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-01T15:00:26.679-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-01T15:00:26.679-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2026-05-01T15:00:26.680-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection conn128: url=jdbc:h2:mem:baseA user=SA
+2026-05-01T15:00:26.681-03:00  INFO 239111 --- [veiculos3] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2026-05-01T15:00:26.681-03:00  WARN 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-01T15:00:26.681-03:00  INFO 239111 --- [veiculos3] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-14)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-01T15:00:26.734-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-01T15:00:26.736-03:00  INFO 239111 --- [veiculos3] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'primary'
+2026-05-01T15:00:26.838-03:00  INFO 239111 --- [veiculos3] [  restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-05-01T15:00:26.838-03:00  WARN 239111 --- [veiculos3] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-05-01T15:00:26.933-03:00  WARN 239111 --- [veiculos3] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-01T15:00:27.108-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Databases available at 'jdbc:h2:mem:baseB', 'jdbc:h2:mem:baseA'
+2026-05-01T15:00:27.132-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-05-01T15:00:27.139-03:00  INFO 239111 --- [veiculos3] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-05-01T15:00:27.143-03:00  INFO 239111 --- [veiculos3] [  restartedMain] c.l.veiculos3.Veiculos3Application       : Started Veiculos3Application in 0.764 seconds (process running for 1561.264)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        usuarios u1_0 
+    where
+        u1_0.username=?
+==============================================
+  USUÁRIOS INICIALIZADOS COM SUCESSO
+==============================================
+  MASTER      → usuario: master      | senha: master123
+  CONTRIBUTOR → usuario: contributor | senha: contributor123
+  AUDITOR     → usuario: auditor     | senha: auditor123
+==============================================
+2026-05-01T15:00:27.169-03:00  INFO 239111 --- [veiculos3] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-01T15:01:12.478-03:00  INFO 239111 --- [veiculos3] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-01T15:01:12.478-03:00  INFO 239111 --- [veiculos3] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-01T15:01:12.481-03:00  INFO 239111 --- [veiculos3] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-05-01T15:02:25.702-03:00  INFO 239111 --- [veiculos3] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-01T15:02:25.703-03:00  INFO 239111 --- [veiculos3] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-05-01T15:02:25.705-03:00  INFO 239111 --- [veiculos3] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'primary'
+2026-05-01T15:02:25.705-03:00  INFO 239111 --- [veiculos3] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'audit'
+2026-05-01T15:02:25.705-03:00  INFO 239111 --- [veiculos3] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2026-05-01T15:02:25.706-03:00  INFO 239111 --- [veiculos3] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2026-05-01T15:02:25.706-03:00  INFO 239111 --- [veiculos3] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2026-05-01T15:02:25.707-03:00  INFO 239111 --- [veiculos3] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.

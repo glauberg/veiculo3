@@ -1,0 +1,283 @@
+{
+  "info": {
+    "name": "Locação de Veículos 3 - Spring Security JWT",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "AUTH",
+      "item": [
+        {
+          "name": "1. Info do Sistema (Público)",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:8080/info", "host": ["localhost"], "port": "8080", "path": ["info"] }
+          }
+        },
+        {
+          "name": "2. Login MASTER",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "http://localhost:8080/auth/login", "host": ["localhost"], "port": "8080", "path": ["auth", "login"] },
+            "body": { "mode": "raw", "raw": "{\n  \"username\": \"master\",\n  \"password\": \"master123\"\n}" }
+          }
+        },
+        {
+          "name": "3. Login CONTRIBUTOR",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "http://localhost:8080/auth/login", "host": ["localhost"], "port": "8080", "path": ["auth", "login"] },
+            "body": { "mode": "raw", "raw": "{\n  \"username\": \"contributor\",\n  \"password\": \"contributor123\"\n}" }
+          }
+        },
+        {
+          "name": "4. Login AUDITOR",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "http://localhost:8080/auth/login", "host": ["localhost"], "port": "8080", "path": ["auth", "login"] },
+            "body": { "mode": "raw", "raw": "{\n  \"username\": \"auditor\",\n  \"password\": \"auditor123\"\n}" }
+          }
+        },
+        {
+          "name": "5. Registro Novo Usuário",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "http://localhost:8080/auth/registro", "host": ["localhost"], "port": "8080", "path": ["auth", "registro"] },
+            "body": { "mode": "raw", "raw": "{\n  \"username\": \"novoauditor\",\n  \"password\": \"senha123\",\n  \"role\": \"ROLE_AUDITOR\"\n}" }
+          }
+        }
+      ]
+    },
+    {
+      "name": "ACESSORIOS",
+      "item": [
+        {
+          "name": "6. Cadastrar Acessório (MASTER)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token_master}}" }
+            ],
+            "url": { "raw": "http://localhost:8080/acessorios", "host": ["localhost"], "port": "8080", "path": ["acessorios"] },
+            "body": { "mode": "raw", "raw": "{\n  \"nome\": \"GPS\",\n  \"descricao\": \"Navegador satelital embutido\"\n}" }
+          }
+        },
+        {
+          "name": "7. Cadastrar Acessório (CONTRIBUTOR - 403)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token_contributor}}" }
+            ],
+            "url": { "raw": "http://localhost:8080/acessorios", "host": ["localhost"], "port": "8080", "path": ["acessorios"] },
+            "body": { "mode": "raw", "raw": "{\n  \"nome\": \"Cadeirinha\",\n  \"descricao\": \"Assento infantil\"\n}" }
+          }
+        },
+        {
+          "name": "8. Listar Acessórios (AUDITOR)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token_auditor}}" }],
+            "url": { "raw": "http://localhost:8080/acessorios", "host": ["localhost"], "port": "8080", "path": ["acessorios"] }
+          }
+        },
+        {
+          "name": "9. Cadastrar Acessório 2 (MASTER)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token_master}}" }
+            ],
+            "url": { "raw": "http://localhost:8080/acessorios", "host": ["localhost"], "port": "8080", "path": ["acessorios"] },
+            "body": { "mode": "raw", "raw": "{\n  \"nome\": \"Cadeirinha Infantil\",\n  \"descricao\": \"Assento de segurança para crianças\"\n}" }
+          }
+        }
+      ]
+    },
+    {
+      "name": "VEICULOS",
+      "item": [
+        {
+          "name": "10. Cadastrar Veículo (MASTER)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token_master}}" }
+            ],
+            "url": { "raw": "http://localhost:8080/veiculos", "host": ["localhost"], "port": "8080", "path": ["veiculos"] },
+            "body": { "mode": "raw", "raw": "{\n  \"marca\": \"Toyota\",\n  \"modelo\": \"Corolla\",\n  \"placa\": \"ABC-1234\",\n  \"categoria\": \"ECONOMICO\",\n  \"valorDiaria\": 80.0,\n  \"acessorioIds\": [1, 2]\n}" }
+          }
+        },
+        {
+          "name": "11. Cadastrar Veículo (CONTRIBUTOR - 403)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token_contributor}}" }
+            ],
+            "url": { "raw": "http://localhost:8080/veiculos", "host": ["localhost"], "port": "8080", "path": ["veiculos"] },
+            "body": { "mode": "raw", "raw": "{\n  \"marca\": \"Honda\",\n  \"modelo\": \"Civic\",\n  \"placa\": \"XYZ-9999\",\n  \"categoria\": \"ECONOMICO\",\n  \"valorDiaria\": 90.0\n}" }
+          }
+        },
+        {
+          "name": "12. Cadastrar Veículo SUV (MASTER)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token_master}}" }
+            ],
+            "url": { "raw": "http://localhost:8080/veiculos", "host": ["localhost"], "port": "8080", "path": ["veiculos"] },
+            "body": { "mode": "raw", "raw": "{\n  \"marca\": \"Honda\",\n  \"modelo\": \"CR-V\",\n  \"placa\": \"DEF-5678\",\n  \"categoria\": \"SUV\",\n  \"valorDiaria\": 200.0,\n  \"acessorioIds\": [1]\n}" }
+          }
+        },
+        {
+          "name": "13. Listar Veículos (AUDITOR)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token_auditor}}" }],
+            "url": { "raw": "http://localhost:8080/veiculos", "host": ["localhost"], "port": "8080", "path": ["veiculos"] }
+          }
+        },
+        {
+          "name": "14. Atualizar Veículo (CONTRIBUTOR)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token_contributor}}" }
+            ],
+            "url": { "raw": "http://localhost:8080/veiculos/1", "host": ["localhost"], "port": "8080", "path": ["veiculos", "1"] },
+            "body": { "mode": "raw", "raw": "{\n  \"marca\": \"Toyota\",\n  \"modelo\": \"Corolla Cross\",\n  \"placa\": \"ABC-1234\",\n  \"categoria\": \"SUV\",\n  \"valorDiaria\": 180.0,\n  \"acessorioIds\": [1]\n}" }
+          }
+        },
+        {
+          "name": "15. Atualizar Veículo (AUDITOR - 403)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token_auditor}}" }
+            ],
+            "url": { "raw": "http://localhost:8080/veiculos/1", "host": ["localhost"], "port": "8080", "path": ["veiculos", "1"] },
+            "body": { "mode": "raw", "raw": "{\n  \"marca\": \"Toyota\",\n  \"modelo\": \"Corolla\",\n  \"placa\": \"ABC-1234\",\n  \"categoria\": \"ECONOMICO\",\n  \"valorDiaria\": 80.0\n}" }
+          }
+        },
+        {
+          "name": "16. Deletar Veículo (AUDITOR - 403)",
+          "request": {
+            "method": "DELETE",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token_auditor}}" }],
+            "url": { "raw": "http://localhost:8080/veiculos/2", "host": ["localhost"], "port": "8080", "path": ["veiculos", "2"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "CLIENTES",
+      "item": [
+        {
+          "name": "17. Cadastrar Cliente (MASTER)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token_master}}" }
+            ],
+            "url": { "raw": "http://localhost:8080/clientes", "host": ["localhost"], "port": "8080", "path": ["clientes"] },
+            "body": { "mode": "raw", "raw": "{\n  \"nome\": \"João Silva\",\n  \"cpf\": \"123.456.789-00\",\n  \"email\": \"joao@email.com\",\n  \"telefone\": \"84999990000\"\n}" }
+          }
+        },
+        {
+          "name": "18. Cadastrar Cliente (CONTRIBUTOR - 403)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token_contributor}}" }
+            ],
+            "url": { "raw": "http://localhost:8080/clientes", "host": ["localhost"], "port": "8080", "path": ["clientes"] },
+            "body": { "mode": "raw", "raw": "{\n  \"nome\": \"Maria Souza\",\n  \"cpf\": \"987.654.321-00\",\n  \"email\": \"maria@email.com\",\n  \"telefone\": \"84999990001\"\n}" }
+          }
+        },
+        {
+          "name": "19. Listar Clientes (CONTRIBUTOR)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token_contributor}}" }],
+            "url": { "raw": "http://localhost:8080/clientes", "host": ["localhost"], "port": "8080", "path": ["clientes"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "LOCACOES",
+      "item": [
+        {
+          "name": "20. Criar Locação (CONTRIBUTOR)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token_contributor}}" }
+            ],
+            "url": { "raw": "http://localhost:8080/locacoes", "host": ["localhost"], "port": "8080", "path": ["locacoes"] },
+            "body": { "mode": "raw", "raw": "{\n  \"clienteId\": 1,\n  \"veiculoId\": 1,\n  \"dataInicio\": \"2026-05-10\",\n  \"dataFim\": \"2026-05-15\"\n}" }
+          }
+        },
+        {
+          "name": "21. Criar Locação (AUDITOR - 403)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token_auditor}}" }
+            ],
+            "url": { "raw": "http://localhost:8080/locacoes", "host": ["localhost"], "port": "8080", "path": ["locacoes"] },
+            "body": { "mode": "raw", "raw": "{\n  \"clienteId\": 1,\n  \"veiculoId\": 2,\n  \"dataInicio\": \"2026-05-10\",\n  \"dataFim\": \"2026-05-15\"\n}" }
+          }
+        },
+        {
+          "name": "22. Listar Locações (AUDITOR)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token_auditor}}" }],
+            "url": { "raw": "http://localhost:8080/locacoes", "host": ["localhost"], "port": "8080", "path": ["locacoes"] }
+          }
+        },
+        {
+          "name": "23. Encerrar Locação (CONTRIBUTOR)",
+          "request": {
+            "method": "DELETE",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token_contributor}}" }],
+            "url": { "raw": "http://localhost:8080/locacoes/1/encerrar", "host": ["localhost"], "port": "8080", "path": ["locacoes", "1", "encerrar"] }
+          }
+        },
+        {
+          "name": "24. Encerrar Locação (AUDITOR - 403)",
+          "request": {
+            "method": "DELETE",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token_auditor}}" }],
+            "url": { "raw": "http://localhost:8080/locacoes/1/encerrar", "host": ["localhost"], "port": "8080", "path": ["locacoes", "1", "encerrar"] }
+          }
+        },
+        {
+          "name": "25. Requisição sem Token (401)",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:8080/veiculos", "host": ["localhost"], "port": "8080", "path": ["veiculos"] }
+          }
+        }
+      ]
+    }
+  ]
+}
