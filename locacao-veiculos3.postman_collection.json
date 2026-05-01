@@ -276,7 +276,7 @@
             "method": "GET",
             "url": { "raw": "http://localhost:8080/veiculos", "host": ["localhost"], "port": "8080", "path": ["veiculos"] }
           }
-        }
+        },
         {
           "name": "26. Buscar veículo inexistente (404)",
           "request": {
@@ -284,7 +284,7 @@
             "header": [{ "key": "Authorization", "value": "Bearer {{token_auditor}}" }],
             "url": { "raw": "http://localhost:8080/veiculos/999", "host": ["localhost"], "port": "8080", "path": ["veiculos", "999"] }
           }
-        }
+        },
         {
           "name": "27. Deletar cliente inexistente (404)",
           "request": {

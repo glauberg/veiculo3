@@ -389,7 +389,24 @@ Importe o arquivo `locacao-veiculos3.postman_collection.json` no Postman. Config
 | 22 | Listar Locações | AUDITOR | 200 — leitura permitida |
 | 23 | Encerrar Locação | CONTRIBUTOR | 204 — veículo liberado |
 
-### Fase 6 — Verificar auditoria (Base B)
+### Fase 6 — Validar 404 Not Found
+
+| # | Requisição | Método | Rota | Token | Resultado esperado |
+|---|---|---|---|---|---|
+| 26 | Buscar veículo inexistente | GET | /veiculos/999 | AUDITOR | 404 — mensagem com ID não encontrado |
+| 27 | Deletar cliente inexistente | DELETE | /clientes/999 | MASTER | 404 — mensagem com ID não encontrado |
+
+Resposta esperada para ambos:
+```json
+{
+  "timestamp": "2026-05-01T10:00:00",
+  "status": 404,
+  "erro": "Recurso não encontrado",
+  "mensagem": "Veículo não encontrado com ID: 999"
+}
+```
+
+### Fase 7 — Verificar auditoria (Base B)
 
 Acesse o H2 Console com JDBC URL `jdbc:h2:mem:baseB` e execute:
 
@@ -418,7 +435,7 @@ Resultado esperado — todas as operações registradas com o username responsá
 | `pom.xml` | Dependências do projeto (inclui jjwt 0.12.3) |
 | `src/main/resources/application.properties` | Configuração das duas datasources e JWT |
 | `locacao-veiculos3.postman_collection.json` | Collection para teste dos endpoints |
-| `diagrama.png` | Diagrama de entidades e relacionamentos |
+| `diagrama-entidades.svg` | Diagrama de entidades e relacionamentos |
 | `README.md` | Este documento |
 
 ---
